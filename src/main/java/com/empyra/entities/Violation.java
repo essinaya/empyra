@@ -17,7 +17,7 @@ public class Violation {
 	//MINOR, MODERATE, MAJOR, CRITICAL. put in enum. also put colored dot in UI
 	private int severity;
 	//true and false should be in enum
-	private boolean resolved;
+	private boolean violationStatus;
 	
 	public long getId() {
 		return id;
@@ -55,11 +55,11 @@ public class Violation {
 	public void setSeverity(int severity) {
 		this.severity = severity;
 	}
-	public boolean isResolved() {
-		return resolved;
+	public boolean getViolationStatus() {
+		return violationStatus;
 	}
-	public void setResolved(boolean resolved) {
-		this.resolved = resolved;
+	public void setViolationStatus(boolean resolved) {
+		this.violationStatus = resolved;
 	}
 
 	
