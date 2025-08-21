@@ -1,10 +1,14 @@
-package com.empyra.entities;
+package com.empyra.empyra_backend.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Unit {
 
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
 	private long id;
 	//put in enum
 	private char building;
