@@ -1,12 +1,16 @@
-package com.empyra.entities;
+package com.empyra.empyra_backend.entities;
 
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class DuesNotice {
 
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
 	private long id;
 	//linked to Unit.java
 	private String unit;

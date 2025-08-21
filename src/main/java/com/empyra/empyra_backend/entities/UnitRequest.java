@@ -1,12 +1,16 @@
-package com.empyra.entities;
+package com.empyra.empyra_backend.entities;
 
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class UnitRequest {
 
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
 	private long id;
 	private String unit;
 	//linked from User.java

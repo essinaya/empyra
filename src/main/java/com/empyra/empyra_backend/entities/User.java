@@ -1,12 +1,18 @@
-package com.empyra.entities;
+package com.empyra.empyra_backend.entities;
 
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "empyra_users")//in postgres, table name cannot be "user" because it is a reserved keyword
 public class User {
 
+	@Id
+	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
 	private long id;
 	private String username;
 	private String password;
