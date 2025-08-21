@@ -11,7 +11,7 @@ public class DuesNotice {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	//linked to Unit.java
 	private String unit;
 	//month/year. Ex: August 2025
@@ -25,10 +25,10 @@ public class DuesNotice {
 	private Date dueDate;
 	private Date paymentDate;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUnit() {

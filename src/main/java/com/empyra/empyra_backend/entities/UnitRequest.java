@@ -11,7 +11,7 @@ public class UnitRequest {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String unit;
 	//linked from User.java
 	private String requestedBy;
@@ -25,10 +25,10 @@ public class UnitRequest {
 	
 	//future: feature for "Currently being viewed", or activity log who viewed it and ano mga actions so far. (Parang service now)
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUnit() {

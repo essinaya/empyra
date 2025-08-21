@@ -1,4 +1,4 @@
-package com.empyra.enums;
+package com.empyra.empyra_backend.enums;
 
 public enum ViolationSeverity {
 	

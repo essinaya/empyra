@@ -1,4 +1,7 @@
-package com.empyra.enums;
+package com.empyra.empyra_backend.enums;
+
+import java.util.Arrays;
+import java.util.List;
 
 public enum UserRoles {
 
@@ -25,4 +28,10 @@ public enum UserRoles {
 	public String getDescription() {
 		return description;
 	}
+	
+	//return a list of all roles
+	public static List<UserRoles> getAllRoles() {
+		return Arrays.asList(UserRoles.values());
+	}
+	
 }

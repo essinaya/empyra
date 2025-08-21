@@ -12,7 +12,7 @@ public class Violation {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	//linked from Unit.java
 	private String unit;
 	private String reportedBy;
@@ -23,10 +23,10 @@ public class Violation {
 	//true and false should be in enum
 	private boolean violationStatus;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUnit() {

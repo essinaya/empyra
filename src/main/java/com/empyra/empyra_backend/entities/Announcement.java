@@ -12,7 +12,7 @@ public class Announcement {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	private String title;
 	private String message;
@@ -21,10 +21,10 @@ public class Announcement {
 	//list that will contain the role from User.java
 	private List<Integer> visibleTo;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {

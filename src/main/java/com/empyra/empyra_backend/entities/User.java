@@ -13,7 +13,7 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String username;
 	private String password;
 	private String email;
@@ -24,16 +24,16 @@ public class User {
 	private int role;
 	private String phoneNumber;
 	//if user is enabled or not. put in enum
-	private boolean enabled;
+	private String enabled;
 	private Date createdAt;
 	//reference from Unit.java
 	private String unit;
 	
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUsername() {
@@ -84,10 +84,10 @@ public class User {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	public boolean isEnabled() {
+	public String isEnabled() {
 		return enabled;
 	}
-	public void setEnabled(boolean enabled) {
+	public void setEnabled(String enabled) {
 		this.enabled = enabled;
 	}
 	public Date getCreatedAt() {

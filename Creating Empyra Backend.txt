@@ -1,0 +1,76 @@
+Creating Empyra Backend
+
+What is this note for?
+I'm gonna list what I've done so far because I know my forgetful ass will forget what the hell I've done so far if I change to a new programming language. Including the concepts. Geez.
+
+You can check in chatgpt entitled "personal website"
+
+
+Roadmap
+1.) Created springboot project.
+
+2.) Created entities with @Entity annotation. You can think of this as the "tables" in your chosen database. For this scenario, we used postgres (even tho i'm used to oracle idk why i chose postgres maybe i like the challenge idk)
+MAKE SURE IT'S IN THE SAME DIRECTORY OF YOUR SPRINGBOOT APP
+
+3.) Downloaded postgres. while waiting for it to download, i created enums because ofc we do.
+
+4.) We implemented postgres in our springboot app. it's in the application.properties (chatgpt says u can add also in application.yml but we dont have yml)
+
+
+We also added in pom.xml
+
+
+Commit: https://github.com/essinaya/empyra/commit/153e37209352e2db82b80e9d9ccddafc42973fc9
+At this point, our springboot app should be up and running
+
+5.) we added @Id and @GeneratedValue to the entities bcos we forgor.
+Commit: https://github.com/essinaya/empyra/commit/0f49ed9446f433ab27b787fc532e7a15760f3775
+
+6.) We seeded (wth even is seeded) data to our db. basically, we're adding stuff to our db without doing sql queries bcos yes we are like this.
+in chatgpt's words:
+
+Step 2C: Seeding initial roles and a default admin user using CommandLineRunner.
+This will allow you to:
+✅Automatically insert roles like ADMIN, SECURITY, MAINTENANCE, etc.
+✅Add a default admin user when the app starts
+✅Avoid needing a manual data.sql file for now
+
+
+We first created Roles.java.
+Then created Repositories interfaces (@Repository). This class is basically telling Spring to perform CRUD operations
+In chatgpt terms:
+✅ What is @Repository in Spring?
+The @Repository annotation is a Spring stereotype annotation that marks a class or interface as a data access layer — meaning it's meant to interact with the database.
+
+🔹 It tells Spring two important things:
+This class should be treated as a "Repository bean" — so Spring will detect it during component scanning and create an instance you can @Autowired anywhere.
+
+It is part of the persistence layer — so Spring can apply special behavior to it (like exception translation).
+
+
+✅ Why Is It Used on Interfaces Like RoleRepository?
+When you extend JpaRepository<Role, Long>, you are telling Spring:
+
+“Please create an implementation for this interface that can talk to the database and do CRUD operations.”
+
+Then, when you add @Repository, Spring knows:
+-This is a DAO (Data Access Object)
+-It should be automatically managed by Spring
+-It can be used anywhere in your app with @Autowired
+
+Even though you're not writing SQL manually, Spring and Hibernate do the work for you.
+
+Seeding
+When I say "seed roles", I mean:
+🧩 Insert default role data into your database when the application starts — if that data doesn't already exist.
+
+Let me break it down clearly:
+
+🎯 What Does "Seeding" Mean in Programming?
+Seeding means:
+Pre-filling a database with default or necessary data so the app can work correctly right away.
+It's like planting the initial data your system needs to function.
+
+
+We then created a DataInitializer. the run statement is the one responsible for seeding the data to the database
+(we're having issues here. but it's late. so let's wrap it up for now.)

@@ -11,7 +11,7 @@ public class MaintenanceTask {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String title;
 	private String description;
 	//linked to User.java with maintenance as role
@@ -23,10 +23,10 @@ public class MaintenanceTask {
 	private Date requestedDate;
 	private Date dueDate;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {

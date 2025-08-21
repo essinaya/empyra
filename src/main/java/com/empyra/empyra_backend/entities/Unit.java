@@ -9,7 +9,7 @@ public class Unit {
 
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	//put in enum
 	private char building;
 	private int unitNumber;
@@ -18,10 +18,10 @@ public class Unit {
 	private String owner;
 	private String renter;
 	private boolean occupied;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public char getBuilding() {

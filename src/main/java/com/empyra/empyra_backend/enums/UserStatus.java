@@ -1,22 +1,26 @@
-package com.empyra.enums;
+package com.empyra.empyra_backend.enums;
 
-public enum ViolationStatus {
+public enum UserStatus {
 	
-	OPEN(1, "Open"),
-	CLOSED(2, "Closed");
-
+	ACTIVE(1, "Active"),
+	INACTIVE(2, "Inactive"),
+	SUSPENDED(3, "Suspended"),
+	DELETED(4, "Deleted");
+	
+	
 	private final int code;
 	private final String description;
-
-	ViolationStatus(int code, String description) {
+	
+	
+	UserStatus(int code, String description) {
 		this.code = code;
 		this.description = description;
 	}
-
+	
+	
 	public int getCode() {
 		return code;
 	}
-
 	public String getDescription() {
 		return description;
 	}

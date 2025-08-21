@@ -11,7 +11,7 @@ public class GuestPass {
 	
 	@Id
 	@GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	//linked from Unit.java
 	private String unit;
 	private String guestName;
@@ -20,10 +20,10 @@ public class GuestPass {
 	private int status;
 	private String approvedBy;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUnit() {
