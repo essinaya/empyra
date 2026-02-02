@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users.administration{Administration.java[Administration" modifiers="1" timestamp="1770004513668"/>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users.maintenance{Maintenance.java[Maintenance" modifiers="1" timestamp="1770004489330"/>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users.propertymanagementoffice{PropertyManagementOffice.java[PropertyManagementOffice" modifiers="1" timestamp="1770004684615"/>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users.resident{Resident.java[Resident" modifiers="1" timestamp="1770004766962"/>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users{User.java[User" modifiers="1" timestamp="1770003758474"/>
+    <typeInfo handle="=EmpyraBackend/src&lt;com.empyra.users.security{Security.java[Security" modifiers="1" timestamp="1770009293134"/>
+</typeInfoHistroy>
