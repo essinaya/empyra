@@ -1,0 +1,17 @@
+package com.empyra.users;
+
+import java.util.Date;
+
+public class User {
+	private String id;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private int role;
+	private String contactNumber;
+	private int status;
+	private Date createdAt;
+	private String createdBy;
+	
+	
+}

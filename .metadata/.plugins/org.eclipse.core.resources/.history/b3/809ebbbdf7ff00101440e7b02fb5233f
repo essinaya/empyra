@@ -1,0 +1,5 @@
+package com.empyra.utils;
+
+public enum Status {
+
+}

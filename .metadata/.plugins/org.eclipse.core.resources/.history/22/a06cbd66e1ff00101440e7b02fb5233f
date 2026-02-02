@@ -1,0 +1,5 @@
+package com.empyra.users;
+
+public class User {
+
+}

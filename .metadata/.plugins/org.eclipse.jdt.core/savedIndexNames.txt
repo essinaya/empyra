@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Cha\Documents\Programming\Java\empyra\.metadata\.plugins\org.eclipse.jdt.core
+1933688934.index
+558167149.index
